@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <section class="container">
       <h1>Careers</h1>
-      <p class="section-sub">We’re building a team of curious, kind, and world-class engineers and designers.</p>
+      <p class="section-sub">We&apos;re building a team of curious, kind, and world-class engineers and designers.</p>
       <div class="card">
         <h3 style="margin-top:0;">Open roles</h3>
         <ul>
@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
           <li>Backend Engineer (Java/Spring Boot)</li>
           <li>Data Engineer (Python/SQL)</li>
         </ul>
-        <p class="section-sub">Send your CV to <a href="mailto:careers@byteintel.ng">careers@byteintel.ng</a></p>
+        <p class="section-sub">Send your CV to <a href="mailto:careers@byteintel.ng">careers&#64;byteintel.ng</a></p>
       </div>
     </section>
   `
