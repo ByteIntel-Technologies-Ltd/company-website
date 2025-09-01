@@ -1,0 +1,5 @@
+.heading-caption {
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:transparent;
+  -webkit-background-clip:text;
+}
