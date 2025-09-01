@@ -3,10 +3,9 @@ import { RouterLink, RouterOutlet, Router, NavigationEnd } from '@angular/router
 import { filter } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink],
-  template: `
+    selector: 'app-root',
+    imports: [RouterOutlet, RouterLink],
+    template: `
     <header class="site-header">
       <div class="container">
         <nav class="navbar">

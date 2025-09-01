@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  standalone: true,
-  selector: 'app-home',
-  imports: [RouterLink],
-  template: `
+    selector: 'app-home',
+    imports: [RouterLink],
+    template: `
     <section class="hero container">
       <div>
         <div class="badges">

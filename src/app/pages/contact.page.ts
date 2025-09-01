@@ -4,10 +4,9 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
 @Component({
-  standalone: true,
-  selector: 'app-contact',
-  imports: [ReactiveFormsModule],
-  template: `
+    selector: 'app-contact',
+    imports: [ReactiveFormsModule],
+    template: `
     <section class="container">
       <h1>Contact Us</h1>
       <p class="section-sub">Tell us about your project. We'll get back to you within 1 business day.</p>

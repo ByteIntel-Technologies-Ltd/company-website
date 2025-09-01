@@ -11,11 +11,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/byteintel-site",
+            "outputPath": {
+              "base": "dist/byteintel-site"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
             "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -25,7 +26,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -41,13 +43,13 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "options": {
-            "browserTarget": "byteintel-site:build"
+            "buildTarget": "byteintel-site:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "byteintel-site:build:production"
+              "buildTarget": "byteintel-site:build:production"
             }
           }
         }
